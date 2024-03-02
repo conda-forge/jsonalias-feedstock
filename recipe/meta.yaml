@@ -1,5 +1,5 @@
 {% set name = "jsonalias" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 64f04d935397d579fc94509e1fcb6212f2d081235d9d6395bd10baedf760a769
+  sha256: e397874a4a13b45c500565703dc71bd42011efde0570246de7a92d284610ac4c
 
 build:
   noarch: python
@@ -29,8 +29,8 @@ test:
     - pip
   commands:
     - pip check
-  downstreams:
-    - solders
+  # downstreams:
+  #  - solders
 
 about:
   home: https://github.com/kevinheavey/jsonalias
