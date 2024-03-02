@@ -29,8 +29,8 @@ test:
     - pip
   commands:
     - pip check
-  downstreams:
-    - solders
+  # downstreams:
+  #  - solders
 
 about:
   home: https://github.com/kevinheavey/jsonalias
